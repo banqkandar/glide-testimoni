@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/glider.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Glide</title>
+</head>
+
+<body>
+    <div class="glider-contain multiple">
+        <h2>Apa yang mereka katakan?</h2>
+        <div class="glider">
+            <figure>
+                <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. "</blockquote>
+                <figcaption>~ Axi ~</figcaption>
+            </figure>
+            <figure>
+                <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. "</blockquote>
+                <figcaption>~ Avi ~</figcaption>
+            </figure>
+            <figure>
+                <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. "</blockquote>
+                <figcaption>~ Agi ~</figcaption>
+            </figure>
+            <figure>
+                <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. "</blockquote>
+                <figcaption>~ Ati ~</figcaption>
+            </figure>
+            <figure>
+                <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. "</blockquote>
+                <figcaption>~ Ari ~</figcaption>
+            </figure>
+        </div>
+        <div class="glider-dots" id="dots"></div>
+    </div>
+
+
+    <script src="glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'), {
+            // Mobile-first defaults
+            slidesToShow: 2.5,
+            draggable : true,
+            slidesToScroll: 1,
+            dots: '#dots',
+        });
+    </script>
+</body>
+
+</html>
